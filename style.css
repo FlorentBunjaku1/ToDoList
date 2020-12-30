@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: linear-gradient(to right top, #0a2246, #122143, #182041, #1c1f3e, #1f1e3b);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form{
+    width: 300px;
+    display: flex;
+}
+form button{
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: white;
+    background-color:transparent;
+    transition: all 0.5s ease;
+    outline: none;
+}
+form input{
+    height: 30px;
+    outline: none;
+    background-color:transparent;
+    border: none;
+    border-bottom: 1px solid #384a68;
+    color: white;
+    font-size: 20px;
+    flex: 1;
+    transition: all 0.5s ease;
+}
+form button:hover{
+    color: #050f20;
+    background-color:white;
+}
+form input:focus{
+    border-bottom: 1px solid white;
+}
+.todos-holder{
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+}
+.todo{
+    width: 100%;
+}
+.todo-list{
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+    color: white;
+    transition: all 0.5 ease;
+}
+.todo-list button{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+}
+.todo-list li{
+    flex: 1;
+}
+.done-btn i{
+    color:#00A300;
+}
+.done-btn i:hover,
+.delete-btn i:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.delete-btn i{
+    color: #660000;
+}
+
+.done{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.error{
+    border-bottom: 1px solid #660000;
+}
